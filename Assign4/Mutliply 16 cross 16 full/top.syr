@@ -1,0 +1,909 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\ram_mod.vhd" into library work
+Parsing entity <ram>.
+Parsing architecture <Behavioral> of entity <ram>.
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\ram_store.vhd" into library work
+Parsing entity <ram_store>.
+Parsing architecture <Behavioral> of entity <ram_store>.
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\ramB.vhd" into library work
+Parsing entity <ramB>.
+Parsing architecture <Behavioral> of entity <ramb>.
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\ram.vhd" into library work
+Parsing entity <A_row>.
+Parsing architecture <Behavioral> of entity <a_row>.
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\comm_fpga_fx2.vhd" into library work
+Parsing entity <comm_fpga_fx2>.
+Parsing architecture <behavioural> of entity <comm_fpga_fx2>.
+Parsing VHDL file "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 202: Using initial value 1 for arow3_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 203: Using initial value 1 for arow4_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 204: Using initial value 1 for arow5_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 205: Using initial value 1 for arow6_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 206: Using initial value 1 for arow7_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 207: Using initial value 1 for arow8_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 208: Using initial value 1 for arow9_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 209: Using initial value 1 for arow10_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 210: Using initial value 1 for arow11_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 211: Using initial value 1 for arow12_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 212: Using initial value 1 for arow13_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 213: Using initial value 1 for arow14_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 214: Using initial value 1 for arow15_count since it is never assigned
+WARNING:HDLCompiler:871 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 215: Using initial value 1 for arow16_count since it is never assigned
+
+Elaborating entity <A_row> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ram> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ramB> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ram_store> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <comm_fpga_fx2> (architecture <behavioural>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd".
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 473: Output port <debug_data> of the instance <r4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 496: Output port <debug_data> of the instance <r5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 519: Output port <debug_data> of the instance <r6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 542: Output port <debug_data> of the instance <r7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 565: Output port <debug_data> of the instance <r8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 588: Output port <debug_data> of the instance <r9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 611: Output port <debug_data> of the instance <r10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 634: Output port <debug_data> of the instance <r11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 657: Output port <debug_data> of the instance <r12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 680: Output port <debug_data> of the instance <r13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 703: Output port <debug_data> of the instance <r14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 726: Output port <debug_data> of the instance <r15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 749: Output port <debug_data> of the instance <r16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" line 773: Output port <debug_data> of the instance <rB> is unconnected or connected to loadless signal.
+    Found 6-bit register for signal <col>.
+    Found 6-bit register for signal <module_enable>.
+    Found 6-bit register for signal <col_send>.
+    Found 9-bit register for signal <num_b>.
+    Found 1-bit register for signal <processing_enable>.
+    Found 6-bit register for signal <module_enable_send>.
+    Found 1-bit register for signal <fetch>.
+    Found 9-bit register for signal <fetch_count>.
+    Found 8-bit register for signal <col_read>.
+    Found 1-bit register for signal <multiply>.
+    Found 9-bit register for signal <multiply_count>.
+    Found 1-bit register for signal <store_data>.
+    Found 8-bit register for signal <sh1>.
+    Found 8-bit register for signal <sh2>.
+    Found 8-bit register for signal <sh3>.
+    Found 8-bit register for signal <sh4>.
+    Found 8-bit register for signal <sh5>.
+    Found 8-bit register for signal <sh6>.
+    Found 8-bit register for signal <sh7>.
+    Found 8-bit register for signal <sh8>.
+    Found 8-bit register for signal <sh9>.
+    Found 8-bit register for signal <sh10>.
+    Found 8-bit register for signal <sh11>.
+    Found 8-bit register for signal <sh12>.
+    Found 8-bit register for signal <sh13>.
+    Found 8-bit register for signal <sh14>.
+    Found 8-bit register for signal <sh15>.
+    Found 8-bit register for signal <sh16>.
+    Found 1-bit register for signal <processing_stop>.
+    Found 8-bit register for signal <store_data_count>.
+    Found 8-bit register for signal <Arow1_count>.
+    Found 8-bit register for signal <Arow2_count>.
+    Found 9-bit register for signal <B_count>.
+    Found 8-bit register for signal <s1_count>.
+    Found 8-bit register for signal <s2_count>.
+    Found 8-bit register for signal <s3_count>.
+    Found 8-bit register for signal <s4_count>.
+    Found 8-bit register for signal <s5_count>.
+    Found 8-bit register for signal <s6_count>.
+    Found 8-bit register for signal <s7_count>.
+    Found 8-bit register for signal <s8_count>.
+    Found 8-bit register for signal <s9_count>.
+    Found 8-bit register for signal <s10_count>.
+    Found 8-bit register for signal <s11_count>.
+    Found 8-bit register for signal <s12_count>.
+    Found 8-bit register for signal <s13_count>.
+    Found 8-bit register for signal <s14_count>.
+    Found 8-bit register for signal <s15_count>.
+    Found 8-bit register for signal <s16_count>.
+    Found 8-bit register for signal <reg0>.
+    Found 6-bit adder for signal <module_enable[5]_GND_4_o_add_2_OUT> created at line 230.
+    Found 6-bit adder for signal <col[5]_GND_4_o_add_3_OUT> created at line 232.
+    Found 9-bit adder for signal <num_b[8]_GND_4_o_add_13_OUT> created at line 245.
+    Found 9-bit adder for signal <fetch_count[8]_GND_4_o_add_27_OUT> created at line 262.
+    Found 8-bit adder for signal <col_read[7]_GND_4_o_add_28_OUT> created at line 263.
+    Found 9-bit adder for signal <multiply_count[8]_GND_4_o_add_31_OUT> created at line 268.
+    Found 8-bit adder for signal <store_data_count[7]_GND_4_o_add_39_OUT> created at line 302.
+    Found 8-bit adder for signal <Arow1_count[7]_GND_4_o_add_78_OUT> created at line 309.
+    Found 8-bit adder for signal <Arow2_count[7]_GND_4_o_add_81_OUT> created at line 312.
+    Found 9-bit adder for signal <B_count[8]_GND_4_o_add_84_OUT> created at line 315.
+    Found 8-bit adder for signal <s1_count[7]_GND_4_o_add_87_OUT> created at line 318.
+    Found 8-bit adder for signal <s2_count[7]_GND_4_o_add_90_OUT> created at line 321.
+    Found 8-bit adder for signal <s3_count[7]_GND_4_o_add_93_OUT> created at line 324.
+    Found 8-bit adder for signal <s4_count[7]_GND_4_o_add_96_OUT> created at line 327.
+    Found 8-bit adder for signal <s5_count[7]_GND_4_o_add_99_OUT> created at line 330.
+    Found 8-bit adder for signal <s6_count[7]_GND_4_o_add_102_OUT> created at line 333.
+    Found 8-bit adder for signal <s7_count[7]_GND_4_o_add_105_OUT> created at line 336.
+    Found 8-bit adder for signal <s8_count[7]_GND_4_o_add_108_OUT> created at line 339.
+    Found 8-bit adder for signal <s9_count[7]_GND_4_o_add_111_OUT> created at line 342.
+    Found 8-bit adder for signal <s10_count[7]_GND_4_o_add_114_OUT> created at line 345.
+    Found 8-bit adder for signal <s11_count[7]_GND_4_o_add_117_OUT> created at line 348.
+    Found 8-bit adder for signal <s12_count[7]_GND_4_o_add_120_OUT> created at line 351.
+    Found 8-bit adder for signal <s13_count[7]_GND_4_o_add_123_OUT> created at line 354.
+    Found 8-bit adder for signal <s14_count[7]_GND_4_o_add_126_OUT> created at line 357.
+    Found 8-bit adder for signal <s15_count[7]_GND_4_o_add_129_OUT> created at line 360.
+    Found 8-bit adder for signal <s16_count[7]_GND_4_o_add_132_OUT> created at line 363.
+    Found 6-bit comparator greater for signal <n0000> created at line 227
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum1 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum2 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum3 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum4 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum5 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum6 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum7 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum8 may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal shared_sum9 may hinder XST clustering optimizations.
+    Summary:
+	inferred  26 Adder/Subtractor(s).
+	inferred 361 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <A_row>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\ram.vhd".
+    Found 8-bit register for signal <sum>.
+    Found 16-bit adder for signal <n0017> created at line 67.
+    Found 8x8-bit multiplier for signal <n0022> created at line 67.
+    Found 6-bit comparator equal for signal <we> created at line 77
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <A_row> synthesized.
+
+Synthesizing Unit <ram>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\ram_mod.vhd".
+    Found 8-bit register for signal <debug_data>.
+    Found 8-bit register for signal <data_o>.
+    Found 8-bit adder for signal <w_address[7]_GND_7_o_add_0_OUT> created at line 59.
+    Found 256x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ram> synthesized.
+
+Synthesizing Unit <ramB>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\ramB.vhd".
+    Found 8-bit register for signal <debug_data>.
+    Found 8-bit register for signal <data_o>.
+    Found 9-bit adder for signal <w_address[8]_GND_202_o_add_0_OUT> created at line 59.
+    Found 512x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ramB> synthesized.
+
+Synthesizing Unit <ram_store>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\ram_store.vhd".
+    Found 256x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <data_o>.
+    Found 8-bit adder for signal <w_address[7]_GND_203_o_add_0_OUT> created at line 56.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ram_store> synthesized.
+
+Synthesizing Unit <comm_fpga_fx2>.
+    Related source file is "E:\Desktop\Assign4\Attempt2 - Shivram\comm_fpga_fx2.vhd".
+    Found 32-bit register for signal <count>.
+    Found 7-bit register for signal <chanAddr>.
+    Found 1-bit register for signal <isWrite>.
+    Found 1-bit register for signal <isAligned>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 8                                              |
+    | Clock              | fx2Clk_in (rising_edge)                        |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit subtractor for signal <GND_204_o_GND_204_o_sub_18_OUT<31:0>> created at line 1308.
+    Found 1-bit tristate buffer for signal <fx2Data_io<7>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<6>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<5>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<4>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<3>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<2>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<1>> created at line 230
+    Found 1-bit tristate buffer for signal <fx2Data_io<0>> created at line 230
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  48 Multiplexer(s).
+	inferred   8 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <comm_fpga_fx2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 50
+ 256x8-bit dual-port RAM                               : 48
+ 512x8-bit dual-port RAM                               : 2
+# Multipliers                                          : 16
+ 8x8-bit multiplier                                    : 16
+# Adders/Subtractors                                   : 76
+ 16-bit adder                                          : 16
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 52
+ 9-bit adder                                           : 5
+# Registers                                            : 120
+ 1-bit register                                        : 7
+ 32-bit register                                       : 1
+ 6-bit register                                        : 4
+ 7-bit register                                        : 1
+ 8-bit register                                        : 103
+ 9-bit register                                        : 4
+# Comparators                                          : 17
+ 6-bit comparator equal                                : 16
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 74
+ 1-bit 2-to-1 multiplexer                              : 35
+ 2-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 5
+ 8-bit 2-to-1 multiplexer                              : 27
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <A_row>.
+The following registers are absorbed into accumulator <sum>: 1 register on signal <sum>.
+	Multiplier <Mmult_n0022> in block <A_row> and accumulator <sum> in block <A_row> are combined into a MAC<Mmac_n0022>.
+Unit <A_row> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram>.
+INFO:Xst:3226 - The RAM <Mram_ram1> will be implemented as a BLOCK RAM, absorbing the following register(s): <debug_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <w_address[7]_GND_7_o_add_0_OUT> |          |
+    |     diA            | connected to signal <data_i>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <debug_read>    |          |
+    |     doB            | connected to signal <debug_data>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <w_address[7]_GND_7_o_add_0_OUT> |          |
+    |     diA            | connected to signal <data_i>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <r_address>     |          |
+    |     doB            | connected to signal <data_o>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ram> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ramB>.
+INFO:Xst:3226 - The RAM <Mram_ram1> will be implemented as a BLOCK RAM, absorbing the following register(s): <debug_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <w_address[8]_GND_202_o_add_0_OUT> |          |
+    |     diA            | connected to signal <data_i>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <debug_read>    |          |
+    |     doB            | connected to signal <debug_data>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <w_address[8]_GND_202_o_add_0_OUT> |          |
+    |     diA            | connected to signal <data_i>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <r_address>     |          |
+    |     doB            | connected to signal <data_o>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ramB> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_store>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <w_address[7]_GND_203_o_add_0_OUT> |          |
+    |     diA            | connected to signal <data_i>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <Clk>           | rise     |
+    |     addrB          | connected to signal <r_address>     |          |
+    |     doB            | connected to signal <data_o>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ram_store> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <fetch_count>: 1 register on signal <fetch_count>.
+The following registers are absorbed into counter <multiply_count>: 1 register on signal <multiply_count>.
+The following registers are absorbed into counter <store_data_count>: 1 register on signal <store_data_count>.
+The following registers are absorbed into counter <Arow1_count>: 1 register on signal <Arow1_count>.
+The following registers are absorbed into counter <Arow2_count>: 1 register on signal <Arow2_count>.
+The following registers are absorbed into counter <B_count>: 1 register on signal <B_count>.
+The following registers are absorbed into counter <s1_count>: 1 register on signal <s1_count>.
+The following registers are absorbed into counter <s2_count>: 1 register on signal <s2_count>.
+The following registers are absorbed into counter <s3_count>: 1 register on signal <s3_count>.
+The following registers are absorbed into counter <s4_count>: 1 register on signal <s4_count>.
+The following registers are absorbed into counter <s6_count>: 1 register on signal <s6_count>.
+The following registers are absorbed into counter <s5_count>: 1 register on signal <s5_count>.
+The following registers are absorbed into counter <s7_count>: 1 register on signal <s7_count>.
+The following registers are absorbed into counter <s8_count>: 1 register on signal <s8_count>.
+The following registers are absorbed into counter <s9_count>: 1 register on signal <s9_count>.
+The following registers are absorbed into counter <s10_count>: 1 register on signal <s10_count>.
+The following registers are absorbed into counter <s11_count>: 1 register on signal <s11_count>.
+The following registers are absorbed into counter <s12_count>: 1 register on signal <s12_count>.
+The following registers are absorbed into counter <s13_count>: 1 register on signal <s13_count>.
+The following registers are absorbed into counter <s14_count>: 1 register on signal <s14_count>.
+The following registers are absorbed into counter <s15_count>: 1 register on signal <s15_count>.
+The following registers are absorbed into counter <s16_count>: 1 register on signal <s16_count>.
+The following registers are absorbed into counter <col>: 1 register on signal <col>.
+The following registers are absorbed into counter <num_b>: 1 register on signal <num_b>.
+The following registers are absorbed into counter <col_read>: 1 register on signal <col_read>.
+The following registers are absorbed into counter <module_enable>: 1 register on signal <module_enable>.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 50
+ 256x8-bit dual-port block RAM                         : 48
+ 512x8-bit dual-port block RAM                         : 2
+# MACs                                                 : 16
+ 8x8-to-8-bit MAC                                      : 16
+# Adders/Subtractors                                   : 34
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 32
+ 9-bit adder                                           : 1
+# Counters                                             : 26
+ 6-bit up counter                                      : 2
+ 8-bit up counter                                      : 20
+ 9-bit up counter                                      : 4
+# Registers                                            : 194
+ Flip-Flops                                            : 194
+# Comparators                                          : 17
+ 6-bit comparator equal                                : 16
+ 6-bit comparator greater                              : 1
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 34
+ 2-bit 2-to-1 multiplexer                              : 7
+ 32-bit 2-to-1 multiplexer                             : 5
+ 8-bit 2-to-1 multiplexer                              : 27
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <comm_fpga_fx2/FSM_0> on signal <state[1:4]> with user encoding.
+------------------------------------
+ State                  | Encoding
+------------------------------------
+ s_idle                 | 0000
+ s_get_count0           | 0001
+ s_get_count1           | 0010
+ s_get_count2           | 0011
+ s_get_count3           | 0100
+ s_begin_write          | 0101
+ s_write                | 0110
+ s_end_write_aligned    | 0111
+ s_end_write_nonaligned | 1000
+ s_read                 | 1001
+------------------------------------
+WARNING:Xst:2677 - Node <multiply_count_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <multiply_count_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <multiply_count_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <multiply_count_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <multiply_count_8> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+WARNING:Xst:1293 - FF/Latch <col_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <col_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <module_enable_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <store_data_count_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <store_data_count_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <store_data_count_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <col_send_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <col_send_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <module_enable_send_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <processing_stop> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <store_data_count_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+FlipFlop comm_fpga_fx2/chanAddr_0 has been replicated 1 time(s)
+FlipFlop comm_fpga_fx2/state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop comm_fpga_fx2/state_FSM_FFd2 has been replicated 4 time(s)
+FlipFlop comm_fpga_fx2/state_FSM_FFd3 has been replicated 3 time(s)
+FlipFlop comm_fpga_fx2/state_FSM_FFd4 has been replicated 2 time(s)
+FlipFlop processing_enable has been replicated 2 time(s)
+FlipFlop processing_stop has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 398
+ Flip-Flops                                            : 398
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1238
+#      GND                         : 1
+#      INV                         : 57
+#      LUT1                        : 156
+#      LUT2                        : 7
+#      LUT3                        : 23
+#      LUT4                        : 183
+#      LUT5                        : 85
+#      LUT6                        : 328
+#      MUXCY                       : 186
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 210
+# FlipFlops/Latches                : 398
+#      FD                          : 44
+#      FDE                         : 354
+# RAMS                             : 36
+#      RAMB8BWER                   : 36
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 29
+#      IBUF                        : 10
+#      IOBUF                       : 8
+#      OBUF                        : 11
+# DSPs                             : 16
+#      DSP48A1                     : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             398  out of  54576     0%  
+ Number of Slice LUTs:                  839  out of  27288     3%  
+    Number used as Logic:               839  out of  27288     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    860
+   Number with an unused Flip Flop:     462  out of    860    53%  
+   Number with an unused LUT:            21  out of    860     2%  
+   Number of fully used LUT-FF pairs:   377  out of    860    43%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  31  out of    218    14%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               18  out of    116    15%  
+    Number using Block RAM only:         18
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                     16  out of     58    27%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+fx2Clk_in                          | BUFGP                  | 414   |
+clk                                | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.047ns (Maximum Frequency: 247.091MHz)
+   Minimum input arrival time before clock: 5.539ns
+   Maximum output required time after clock: 11.394ns
+   Maximum combinational path delay: 6.504ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'fx2Clk_in'
+  Clock period: 4.047ns (frequency: 247.090MHz)
+  Total number of paths / destination ports: 5776 / 775
+-------------------------------------------------------------------------
+Delay:               4.047ns (Levels of Logic = 4)
+  Source:            comm_fpga_fx2/count_14 (FF)
+  Destination:       comm_fpga_fx2/state_FSM_FFd4 (FF)
+  Source Clock:      fx2Clk_in rising
+  Destination Clock: fx2Clk_in rising
+
+  Data Path: comm_fpga_fx2/count_14 to comm_fpga_fx2/state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   1.015  comm_fpga_fx2/count_14 (comm_fpga_fx2/count_14)
+     LUT6:I0->O            1   0.203   0.924  comm_fpga_fx2/count[31]_GND_204_o_equal_19_o<31>5 (comm_fpga_fx2/count[31]_GND_204_o_equal_19_o<31>4)
+     LUT6:I1->O            5   0.203   0.819  comm_fpga_fx2/count[31]_GND_204_o_equal_19_o<31>6 (comm_fpga_fx2/count[31]_GND_204_o_equal_19_o)
+     LUT6:I4->O            1   0.203   0.000  comm_fpga_fx2/state_FSM_FFd4-In3_F (N139)
+     MUXF7:I0->O           3   0.131   0.000  comm_fpga_fx2/state_FSM_FFd4-In3 (comm_fpga_fx2/state_FSM_FFd4-In)
+     FD:D                      0.102          comm_fpga_fx2/state_FSM_FFd4
+    ----------------------------------------
+    Total                      4.047ns (1.289ns logic, 2.758ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fx2Clk_in'
+  Total number of paths / destination ports: 406 / 279
+-------------------------------------------------------------------------
+Offset:              5.539ns (Levels of Logic = 4)
+  Source:            fx2GotData_in (PAD)
+  Destination:       module_enable_4 (FF)
+  Destination Clock: fx2Clk_in rising
+
+  Data Path: fx2GotData_in to module_enable_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.222   1.764  fx2GotData_in_IBUF (fx2GotData_in_IBUF)
+     LUT5:I0->O           20   0.203   1.093  comm_fpga_fx2/Mmux_h2fValid_out11 (h2fValid)
+     LUT6:I5->O            6   0.205   0.745  _n05321 (_n0532)
+     LUT4:I3->O            1   0.205   0.000  module_enable_4_glue_set (module_enable_4_glue_set)
+     FD:D                      0.102          module_enable_4
+    ----------------------------------------
+    Total                      5.539ns (1.937ns logic, 3.602ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fx2Clk_in'
+  Total number of paths / destination ports: 2401 / 18
+-------------------------------------------------------------------------
+Offset:              11.394ns (Levels of Logic = 8)
+  Source:            comm_fpga_fx2/chanAddr_6 (FF)
+  Destination:       fx2Data_io<7> (PAD)
+  Source Clock:      fx2Clk_in rising
+
+  Data Path: comm_fpga_fx2/chanAddr_6 to fx2Data_io<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.447   1.077  comm_fpga_fx2/chanAddr_6 (comm_fpga_fx2/chanAddr_6)
+     LUT4:I0->O           18   0.203   1.050  GND_4_o_chanAddr[6]_equal_126_o<6>11 (GND_4_o_chanAddr[6]_equal_126_o<6>1)
+     LUT4:I3->O            8   0.205   1.147  _n0788<6>1 (_n0788)
+     LUT6:I1->O            1   0.203   0.924  comm_fpga_fx2/Mmux_dataOut18 (comm_fpga_fx2/Mmux_dataOut17)
+     LUT6:I1->O            1   0.203   0.808  comm_fpga_fx2/Mmux_dataOut19 (comm_fpga_fx2/Mmux_dataOut18)
+     LUT6:I3->O            1   0.205   0.684  comm_fpga_fx2/Mmux_dataOut110 (comm_fpga_fx2/Mmux_dataOut19)
+     LUT6:I4->O            1   0.203   0.684  comm_fpga_fx2/Mmux_dataOut111 (comm_fpga_fx2/Mmux_dataOut110)
+     LUT6:I4->O            1   0.203   0.579  comm_fpga_fx2/Mmux_dataOut112 (comm_fpga_fx2/dataOut<0>)
+     IOBUF:I->IO               2.571          fx2Data_io_0_IOBUF (fx2Data_io<0>)
+    ----------------------------------------
+    Total                     11.394ns (4.443ns logic, 6.951ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 176 / 8
+-------------------------------------------------------------------------
+Offset:              10.508ns (Levels of Logic = 6)
+  Source:            rB/Mram_ram (RAM)
+  Destination:       fx2Data_io<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: rB/Mram_ram to fx2Data_io<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO7   17   1.850   1.392  rB/Mram_ram (d_oB<7>)
+     LUT6:I0->O            1   0.203   0.924  comm_fpga_fx2/Mmux_dataOut88 (comm_fpga_fx2/Mmux_dataOut87)
+     LUT6:I1->O            1   0.203   0.808  comm_fpga_fx2/Mmux_dataOut89 (comm_fpga_fx2/Mmux_dataOut88)
+     LUT6:I3->O            1   0.205   0.684  comm_fpga_fx2/Mmux_dataOut810 (comm_fpga_fx2/Mmux_dataOut89)
+     LUT6:I4->O            1   0.203   0.684  comm_fpga_fx2/Mmux_dataOut811 (comm_fpga_fx2/Mmux_dataOut810)
+     LUT6:I4->O            1   0.203   0.579  comm_fpga_fx2/Mmux_dataOut812 (comm_fpga_fx2/dataOut<7>)
+     IOBUF:I->IO               2.571          fx2Data_io_7_IOBUF (fx2Data_io<7>)
+    ----------------------------------------
+    Total                     10.508ns (5.438ns logic, 5.070ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 27 / 11
+-------------------------------------------------------------------------
+Delay:               6.504ns (Levels of Logic = 3)
+  Source:            fx2GotRoom_in (PAD)
+  Destination:       fx2Data_io<7> (PAD)
+
+  Data Path: fx2GotRoom_in to fx2Data_io<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  fx2GotRoom_in_IBUF (fx2GotRoom_in_IBUF)
+     LUT5:I2->O            8   0.205   0.802  comm_fpga_fx2/f2hReady_out_inv1 (comm_fpga_fx2/f2hReady_out_inv)
+     IOBUF:T->IO               2.571          fx2Data_io_7_IOBUF (fx2Data_io<7>)
+    ----------------------------------------
+    Total                      6.504ns (3.998ns logic, 2.506ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+fx2Clk_in      |    4.346|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fx2Clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.193|         |         |         |
+fx2Clk_in      |    4.047|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.11 secs
+ 
+--> 
+
+Total memory usage is 292328 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :   29 (   0 filtered)
+

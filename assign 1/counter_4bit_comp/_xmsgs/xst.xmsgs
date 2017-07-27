@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 120: Redeclaration of ansi port <arg fmt="%s" index="1">reducedclk</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 124: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 107: Assignment to <arg fmt="%s" index="1">q0bar</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 108: Assignment to <arg fmt="%s" index="1">q1bar</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 109: Assignment to <arg fmt="%s" index="1">q2bar</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v" Line 110: Assignment to <arg fmt="%s" index="1">q2bar</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v</arg>&quot; line <arg fmt="%s" index="2">107</arg>: Output port &lt;<arg fmt="%s" index="3">Qn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">inst1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v</arg>&quot; line <arg fmt="%s" index="2">108</arg>: Output port &lt;<arg fmt="%s" index="3">Qn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">inst2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">Qn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">inst3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\DDP\Xilinx\ISE\counter_4bit_comp\main.v</arg>&quot; line <arg fmt="%s" index="2">110</arg>: Output port &lt;<arg fmt="%s" index="3">Qn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">inst4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst4/Qn</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst3/Qn</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst2/Qn</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">inst1/Qn</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">main</arg>&gt;.
+</msg>
+
+</messages>
+

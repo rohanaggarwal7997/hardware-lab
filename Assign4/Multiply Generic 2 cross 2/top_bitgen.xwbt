@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Desktop\Assign4\Attempt2 - Shivram\top.ncd
+OUTFILE=E:\Desktop\Assign4\Attempt2 - Shivram\top.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=E:\Desktop\Assign4\Attempt2 - Shivram
+LICENSE=WebPack
+USER_INFO=211290086_0_0_131

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\DDP\Xilinx\ISE\counter_4bit_27reg_behav\main.ncd
+OUTFILE=E:\DDP\Xilinx\ISE\counter_4bit_27reg_behav\main.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=E:\DDP\Xilinx\ISE\counter_4bit_27reg_behav
+LICENSE=ISE
+USER_INFO=178200940_1777492345_210560825_321

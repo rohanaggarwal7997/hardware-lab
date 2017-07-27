@@ -1,0 +1,1234 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" into library work
+Parsing module <sync_reset>.
+Parsing module <debounce_switch>.
+Parsing module <main>.
+Parsing module <action>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 145: Port DSSEN is not connected to this instance
+
+Elaborating module <main>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKIN_PERIOD=10,CLK_FEEDBACK="NONE",CLKDV_DIVIDE=2.0,CLKFX_MULTIPLY=5.0,CLKFX_DIVIDE=4.0,PHASE_SHIFT=0,CLKOUT_PHASE_SHIFT="NONE",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",STARTUP_WAIT="FALSE",CLKIN_DIVIDE_BY_2="FALSE")>.
+WARNING:HDLCompiler:413 - "N:/P.20131013/rtf/devlib/verilog/src/iSE/unisim_comp.v" Line 1356: Result of 64-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:1843 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 150: Possible conversion of parameter value of CLKFX_DIVIDE to fit the type of formal
+WARNING:HDLCompiler:413 - "N:/P.20131013/rtf/devlib/verilog/src/iSE/unisim_comp.v" Line 1357: Result of 64-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:1843 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 149: Possible conversion of parameter value of CLKFX_MULTIPLY to fit the type of formal
+
+Elaborating module <BUFG>.
+
+Elaborating module <sync_reset(N=4)>.
+
+Elaborating module <debounce_switch(WIDTH=13,N=4,RATE=125000)>.
+
+Elaborating module <action>.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 312: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 325: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 332: Result of 31-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 337: Result of 31-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 341: Result of 31-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v" Line 346: Result of 31-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <sync_reset>.
+    Related source file is "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v".
+        N = 4
+    Found 4-bit register for signal <sync_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <sync_reset> synthesized.
+
+Synthesizing Unit <debounce_switch>.
+    Related source file is "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v".
+        WIDTH = 13
+        N = 4
+        RATE = 125000
+    Found 52-bit register for signal <n0102[51:0]>.
+    Found 24-bit register for signal <cnt_reg>.
+    Found 1-bit register for signal <state<12>>.
+    Found 1-bit register for signal <state<11>>.
+    Found 1-bit register for signal <state<10>>.
+    Found 1-bit register for signal <state<9>>.
+    Found 1-bit register for signal <state<8>>.
+    Found 1-bit register for signal <state<7>>.
+    Found 1-bit register for signal <state<6>>.
+    Found 1-bit register for signal <state<5>>.
+    Found 1-bit register for signal <state<4>>.
+    Found 1-bit register for signal <state<3>>.
+    Found 1-bit register for signal <state<2>>.
+    Found 1-bit register for signal <state<1>>.
+    Found 1-bit register for signal <state<0>>.
+    Found 24-bit adder for signal <cnt_reg[23]_GND_7_o_add_2_OUT> created at line 77.
+    Found 24-bit comparator greater for signal <cnt_reg[23]_GND_7_o_LessThan_2_o> created at line 76
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  89 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <debounce_switch> synthesized.
+
+Synthesizing Unit <action>.
+    Related source file is "C:\Users\Shivram\Desktop\hardware\Calculator - rtl\main.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnu> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 31-bit register for signal <storeN>.
+    Found 31-bit register for signal <SUM>.
+    Found 31-bit register for signal <SUMSQ>.
+    Found 31-bit register for signal <AVG>.
+    Found 31-bit register for signal <temp>.
+    Found 31-bit register for signal <STD>.
+    Found 8-bit register for signal <led>.
+    Found 31-bit register for signal <N>.
+    Found 31-bit subtractor for signal <storeN[30]_SUM[30]_sub_28_OUT> created at line 320.
+    Found 32-bit subtractor for signal <storeN[30]_SUM[30]_sub_37_OUT> created at line 322.
+    Found 31-bit adder for signal <SUM[30]_GND_9_o_add_3_OUT> created at line 298.
+    Found 31-bit adder for signal <SUMSQ[30]_GND_9_o_add_5_OUT> created at line 299.
+    Found 31-bit adder for signal <AVG[30]_GND_9_o_add_9_OUT> created at line 310.
+    Found 32-bit adder for signal <n0100> created at line 325.
+    Found 31-bit subtractor for signal <GND_9_o_GND_9_o_sub_12_OUT<30:0>> created at line 312.
+    Found 8x8-bit multiplier for signal <sw[7]_sw[7]_MuLt_4_OUT> created at line 299.
+    Found 31x31-bit multiplier for signal <n0072> created at line 320.
+    Found 32x32-bit multiplier for signal <n0075> created at line 322.
+    Found 31x31-bit multiplier for signal <n0076> created at line 322.
+    Found 31x31-bit multiplier for signal <n0077> created at line 322.
+    Found 31x31-bit multiplier for signal <n0079> created at line 322.
+    Found 31-bit comparator greater for signal <n0023> created at line 320
+    Found 32-bit comparator lessequal for signal <storeN[30]_BUS_0006_LessThan_40_o> created at line 322
+    Summary:
+	inferred   6 Multiplier(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 225 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <action> synthesized.
+
+Synthesizing Unit <div_31u_31u>.
+    Related source file is "".
+    Found 62-bit adder for signal <n3236> created at line 0.
+    Found 62-bit adder for signal <GND_11_o_b[30]_add_1_OUT> created at line 0.
+    Found 61-bit adder for signal <n3240> created at line 0.
+    Found 61-bit adder for signal <GND_11_o_b[30]_add_3_OUT> created at line 0.
+    Found 60-bit adder for signal <n3244> created at line 0.
+    Found 60-bit adder for signal <GND_11_o_b[30]_add_5_OUT> created at line 0.
+    Found 59-bit adder for signal <n3248> created at line 0.
+    Found 59-bit adder for signal <GND_11_o_b[30]_add_7_OUT> created at line 0.
+    Found 58-bit adder for signal <n3252> created at line 0.
+    Found 58-bit adder for signal <GND_11_o_b[30]_add_9_OUT> created at line 0.
+    Found 57-bit adder for signal <n3256> created at line 0.
+    Found 57-bit adder for signal <GND_11_o_b[30]_add_11_OUT> created at line 0.
+    Found 56-bit adder for signal <n3260> created at line 0.
+    Found 56-bit adder for signal <GND_11_o_b[30]_add_13_OUT> created at line 0.
+    Found 55-bit adder for signal <n3264> created at line 0.
+    Found 55-bit adder for signal <GND_11_o_b[30]_add_15_OUT> created at line 0.
+    Found 54-bit adder for signal <n3268> created at line 0.
+    Found 54-bit adder for signal <GND_11_o_b[30]_add_17_OUT> created at line 0.
+    Found 53-bit adder for signal <n3272> created at line 0.
+    Found 53-bit adder for signal <GND_11_o_b[30]_add_19_OUT> created at line 0.
+    Found 52-bit adder for signal <n3276> created at line 0.
+    Found 52-bit adder for signal <GND_11_o_b[30]_add_21_OUT> created at line 0.
+    Found 51-bit adder for signal <n3280> created at line 0.
+    Found 51-bit adder for signal <GND_11_o_b[30]_add_23_OUT> created at line 0.
+    Found 50-bit adder for signal <n3284> created at line 0.
+    Found 50-bit adder for signal <GND_11_o_b[30]_add_25_OUT> created at line 0.
+    Found 49-bit adder for signal <n3288> created at line 0.
+    Found 49-bit adder for signal <GND_11_o_b[30]_add_27_OUT> created at line 0.
+    Found 48-bit adder for signal <n3292> created at line 0.
+    Found 48-bit adder for signal <GND_11_o_b[30]_add_29_OUT> created at line 0.
+    Found 47-bit adder for signal <n3296> created at line 0.
+    Found 47-bit adder for signal <GND_11_o_b[30]_add_31_OUT> created at line 0.
+    Found 46-bit adder for signal <n3300> created at line 0.
+    Found 46-bit adder for signal <GND_11_o_b[30]_add_33_OUT> created at line 0.
+    Found 45-bit adder for signal <n3304> created at line 0.
+    Found 45-bit adder for signal <GND_11_o_b[30]_add_35_OUT> created at line 0.
+    Found 44-bit adder for signal <n3308> created at line 0.
+    Found 44-bit adder for signal <GND_11_o_b[30]_add_37_OUT> created at line 0.
+    Found 43-bit adder for signal <n3312> created at line 0.
+    Found 43-bit adder for signal <GND_11_o_b[30]_add_39_OUT> created at line 0.
+    Found 42-bit adder for signal <n3316> created at line 0.
+    Found 42-bit adder for signal <GND_11_o_b[30]_add_41_OUT> created at line 0.
+    Found 41-bit adder for signal <n3320> created at line 0.
+    Found 41-bit adder for signal <GND_11_o_b[30]_add_43_OUT> created at line 0.
+    Found 40-bit adder for signal <n3324> created at line 0.
+    Found 40-bit adder for signal <GND_11_o_b[30]_add_45_OUT> created at line 0.
+    Found 39-bit adder for signal <n3328> created at line 0.
+    Found 39-bit adder for signal <GND_11_o_b[30]_add_47_OUT> created at line 0.
+    Found 38-bit adder for signal <n3332> created at line 0.
+    Found 38-bit adder for signal <GND_11_o_b[30]_add_49_OUT> created at line 0.
+    Found 37-bit adder for signal <n3336> created at line 0.
+    Found 37-bit adder for signal <GND_11_o_b[30]_add_51_OUT> created at line 0.
+    Found 36-bit adder for signal <n3340> created at line 0.
+    Found 36-bit adder for signal <GND_11_o_b[30]_add_53_OUT> created at line 0.
+    Found 35-bit adder for signal <n3344> created at line 0.
+    Found 35-bit adder for signal <GND_11_o_b[30]_add_55_OUT> created at line 0.
+    Found 34-bit adder for signal <n3348> created at line 0.
+    Found 34-bit adder for signal <GND_11_o_b[30]_add_57_OUT> created at line 0.
+    Found 33-bit adder for signal <n3352> created at line 0.
+    Found 33-bit adder for signal <GND_11_o_b[30]_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <n3356> created at line 0.
+    Found 32-bit adder for signal <GND_11_o_b[30]_add_61_OUT> created at line 0.
+    Found 62-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Summary:
+	inferred  62 Adder/Subtractor(s).
+	inferred  32 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_31u_31u> synthesized.
+
+Synthesizing Unit <div_32u_32u>.
+    Related source file is "".
+    Found 64-bit adder for signal <n3436> created at line 0.
+    Found 64-bit adder for signal <GND_14_o_b[31]_add_1_OUT> created at line 0.
+    Found 63-bit adder for signal <n3440> created at line 0.
+    Found 63-bit adder for signal <GND_14_o_b[31]_add_3_OUT> created at line 0.
+    Found 62-bit adder for signal <n3444> created at line 0.
+    Found 62-bit adder for signal <GND_14_o_b[31]_add_5_OUT> created at line 0.
+    Found 61-bit adder for signal <n3448> created at line 0.
+    Found 61-bit adder for signal <GND_14_o_b[31]_add_7_OUT> created at line 0.
+    Found 60-bit adder for signal <n3452> created at line 0.
+    Found 60-bit adder for signal <GND_14_o_b[31]_add_9_OUT> created at line 0.
+    Found 59-bit adder for signal <n3456> created at line 0.
+    Found 59-bit adder for signal <GND_14_o_b[31]_add_11_OUT> created at line 0.
+    Found 58-bit adder for signal <n3460> created at line 0.
+    Found 58-bit adder for signal <GND_14_o_b[31]_add_13_OUT> created at line 0.
+    Found 57-bit adder for signal <n3464> created at line 0.
+    Found 57-bit adder for signal <GND_14_o_b[31]_add_15_OUT> created at line 0.
+    Found 56-bit adder for signal <n3468> created at line 0.
+    Found 56-bit adder for signal <GND_14_o_b[31]_add_17_OUT> created at line 0.
+    Found 55-bit adder for signal <n3472> created at line 0.
+    Found 55-bit adder for signal <GND_14_o_b[31]_add_19_OUT> created at line 0.
+    Found 54-bit adder for signal <n3476> created at line 0.
+    Found 54-bit adder for signal <GND_14_o_b[31]_add_21_OUT> created at line 0.
+    Found 53-bit adder for signal <n3480> created at line 0.
+    Found 53-bit adder for signal <GND_14_o_b[31]_add_23_OUT> created at line 0.
+    Found 52-bit adder for signal <n3484> created at line 0.
+    Found 52-bit adder for signal <GND_14_o_b[31]_add_25_OUT> created at line 0.
+    Found 51-bit adder for signal <n3488> created at line 0.
+    Found 51-bit adder for signal <GND_14_o_b[31]_add_27_OUT> created at line 0.
+    Found 50-bit adder for signal <n3492> created at line 0.
+    Found 50-bit adder for signal <GND_14_o_b[31]_add_29_OUT> created at line 0.
+    Found 49-bit adder for signal <n3496> created at line 0.
+    Found 49-bit adder for signal <GND_14_o_b[31]_add_31_OUT> created at line 0.
+    Found 48-bit adder for signal <n3500> created at line 0.
+    Found 48-bit adder for signal <GND_14_o_b[31]_add_33_OUT> created at line 0.
+    Found 47-bit adder for signal <n3504> created at line 0.
+    Found 47-bit adder for signal <GND_14_o_b[31]_add_35_OUT> created at line 0.
+    Found 46-bit adder for signal <n3508> created at line 0.
+    Found 46-bit adder for signal <GND_14_o_b[31]_add_37_OUT> created at line 0.
+    Found 45-bit adder for signal <n3512> created at line 0.
+    Found 45-bit adder for signal <GND_14_o_b[31]_add_39_OUT> created at line 0.
+    Found 44-bit adder for signal <n3516> created at line 0.
+    Found 44-bit adder for signal <GND_14_o_b[31]_add_41_OUT> created at line 0.
+    Found 43-bit adder for signal <n3520> created at line 0.
+    Found 43-bit adder for signal <GND_14_o_b[31]_add_43_OUT> created at line 0.
+    Found 42-bit adder for signal <n3524> created at line 0.
+    Found 42-bit adder for signal <GND_14_o_b[31]_add_45_OUT> created at line 0.
+    Found 41-bit adder for signal <n3528> created at line 0.
+    Found 41-bit adder for signal <GND_14_o_b[31]_add_47_OUT> created at line 0.
+    Found 40-bit adder for signal <n3532> created at line 0.
+    Found 40-bit adder for signal <GND_14_o_b[31]_add_49_OUT> created at line 0.
+    Found 39-bit adder for signal <n3536> created at line 0.
+    Found 39-bit adder for signal <GND_14_o_b[31]_add_51_OUT> created at line 0.
+    Found 38-bit adder for signal <n3540> created at line 0.
+    Found 38-bit adder for signal <GND_14_o_b[31]_add_53_OUT> created at line 0.
+    Found 37-bit adder for signal <n3544> created at line 0.
+    Found 37-bit adder for signal <GND_14_o_b[31]_add_55_OUT> created at line 0.
+    Found 36-bit adder for signal <n3548> created at line 0.
+    Found 36-bit adder for signal <GND_14_o_b[31]_add_57_OUT> created at line 0.
+    Found 35-bit adder for signal <n3552> created at line 0.
+    Found 35-bit adder for signal <GND_14_o_b[31]_add_59_OUT> created at line 0.
+    Found 34-bit adder for signal <n3556> created at line 0.
+    Found 34-bit adder for signal <GND_14_o_b[31]_add_61_OUT> created at line 0.
+    Found 33-bit adder for signal <n3560> created at line 0.
+    Found 33-bit adder for signal <GND_14_o_b[31]_add_63_OUT> created at line 0.
+    Found 64-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 63-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 62-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 61-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 60-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 59-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 58-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 57-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 56-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 55-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 54-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 53-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 52-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 51-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 50-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 49-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 48-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 47-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 46-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  64 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 993 Multiplexer(s).
+Unit <div_32u_32u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 6
+ 31x31-bit multiplier                                  : 4
+ 32x32-bit multiplier                                  : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 196
+ 24-bit adder                                          : 1
+ 31-bit adder                                          : 3
+ 31-bit subtractor                                     : 2
+ 32-bit adder                                          : 5
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 6
+ 34-bit adder                                          : 6
+ 35-bit adder                                          : 6
+ 36-bit adder                                          : 6
+ 37-bit adder                                          : 6
+ 38-bit adder                                          : 6
+ 39-bit adder                                          : 6
+ 40-bit adder                                          : 6
+ 41-bit adder                                          : 6
+ 42-bit adder                                          : 6
+ 43-bit adder                                          : 6
+ 44-bit adder                                          : 6
+ 45-bit adder                                          : 6
+ 46-bit adder                                          : 6
+ 47-bit adder                                          : 6
+ 48-bit adder                                          : 6
+ 49-bit adder                                          : 6
+ 50-bit adder                                          : 6
+ 51-bit adder                                          : 6
+ 52-bit adder                                          : 6
+ 53-bit adder                                          : 6
+ 54-bit adder                                          : 6
+ 55-bit adder                                          : 6
+ 56-bit adder                                          : 6
+ 57-bit adder                                          : 6
+ 58-bit adder                                          : 6
+ 59-bit adder                                          : 6
+ 60-bit adder                                          : 6
+ 61-bit adder                                          : 6
+ 62-bit adder                                          : 6
+ 63-bit adder                                          : 2
+ 64-bit adder                                          : 2
+# Registers                                            : 24
+ 1-bit register                                        : 13
+ 24-bit register                                       : 1
+ 31-bit register                                       : 7
+ 4-bit register                                        : 1
+ 52-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 100
+ 24-bit comparator greater                             : 1
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 4
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+ 46-bit comparator lessequal                           : 3
+ 47-bit comparator lessequal                           : 3
+ 48-bit comparator lessequal                           : 3
+ 49-bit comparator lessequal                           : 3
+ 50-bit comparator lessequal                           : 3
+ 51-bit comparator lessequal                           : 3
+ 52-bit comparator lessequal                           : 3
+ 53-bit comparator lessequal                           : 3
+ 54-bit comparator lessequal                           : 3
+ 55-bit comparator lessequal                           : 3
+ 56-bit comparator lessequal                           : 3
+ 57-bit comparator lessequal                           : 3
+ 58-bit comparator lessequal                           : 3
+ 59-bit comparator lessequal                           : 3
+ 60-bit comparator lessequal                           : 3
+ 61-bit comparator lessequal                           : 3
+ 62-bit comparator lessequal                           : 3
+ 63-bit comparator lessequal                           : 1
+ 64-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2860
+ 1-bit 2-to-1 multiplexer                              : 2852
+ 24-bit 2-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <storeN_8> in Unit <starting> is equivalent to the following 22 FFs/Latches, which will be removed : <storeN_9> <storeN_10> <storeN_11> <storeN_12> <storeN_13> <storeN_14> <storeN_15> <storeN_16> <storeN_17> <storeN_18> <storeN_19> <storeN_20> <storeN_21> <storeN_22> <storeN_23> <storeN_24> <storeN_25> <storeN_26> <storeN_27> <storeN_28> <storeN_29> <storeN_30> 
+WARNING:Xst:1293 - FF/Latch <storeN_8> has a constant value of 0 in block <starting>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <debounce_reg_0_40> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_41> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_42> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_43> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_44> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_45> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_46> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_47> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_48> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_49> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_50> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <debounce_reg_0_51> of sequential type is unconnected in block <debounce_switch_inst>.
+WARNING:Xst:2677 - Node <STD_8> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_9> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_10> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_11> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_12> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_13> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_14> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_15> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_16> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_17> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_18> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_19> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_20> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_21> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_22> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_23> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_24> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_25> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_26> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_27> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_28> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_29> of sequential type is unconnected in block <starting>.
+WARNING:Xst:2677 - Node <STD_30> of sequential type is unconnected in block <starting>.
+
+Synthesizing (advanced) Unit <action>.
+The following registers are absorbed into accumulator <AVG>: 1 register on signal <AVG>.
+The following registers are absorbed into accumulator <SUMSQ>: 1 register on signal <SUMSQ>.
+The following registers are absorbed into accumulator <SUM>: 1 register on signal <SUM>.
+The following registers are absorbed into counter <N>: 1 register on signal <N>.
+	Multiplier <Mmult_sw[7]_sw[7]_MuLt_4_OUT> in block <action> and accumulator <SUMSQ> in block <action> are combined into a MAC<Mmac_sw[7]_sw[7]_MuLt_4_OUT>.
+Unit <action> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce_switch>.
+The following registers are absorbed into counter <cnt_reg>: 1 register on signal <cnt_reg>.
+Unit <debounce_switch> synthesized (advanced).
+WARNING:Xst:2677 - Node <STD_8> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_9> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_10> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_11> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_12> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_13> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_14> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_15> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_16> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_17> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_18> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_19> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_20> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_21> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_22> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_23> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_24> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_25> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_26> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_27> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_28> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_29> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <STD_30> of sequential type is unconnected in block <action>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 8x8-to-31-bit MAC                                     : 1
+# Multipliers                                          : 5
+ 31x31-bit multiplier                                  : 4
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 98
+ 31-bit adder                                          : 1
+ 31-bit adder carry in                                 : 62
+ 31-bit subtractor                                     : 1
+ 32-bit adder                                          : 1
+ 32-bit adder carry in                                 : 32
+ 32-bit subtractor                                     : 1
+# Counters                                             : 2
+ 24-bit up counter                                     : 1
+ 31-bit down counter                                   : 1
+# Accumulators                                         : 2
+ 31-bit up accumulator                                 : 1
+ 31-bit up loadable accumulator                        : 1
+# Registers                                            : 147
+ Flip-Flops                                            : 147
+# Comparators                                          : 100
+ 24-bit comparator greater                             : 1
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 4
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+ 46-bit comparator lessequal                           : 3
+ 47-bit comparator lessequal                           : 3
+ 48-bit comparator lessequal                           : 3
+ 49-bit comparator lessequal                           : 3
+ 50-bit comparator lessequal                           : 3
+ 51-bit comparator lessequal                           : 3
+ 52-bit comparator lessequal                           : 3
+ 53-bit comparator lessequal                           : 3
+ 54-bit comparator lessequal                           : 3
+ 55-bit comparator lessequal                           : 3
+ 56-bit comparator lessequal                           : 3
+ 57-bit comparator lessequal                           : 3
+ 58-bit comparator lessequal                           : 3
+ 59-bit comparator lessequal                           : 3
+ 60-bit comparator lessequal                           : 3
+ 61-bit comparator lessequal                           : 3
+ 62-bit comparator lessequal                           : 3
+ 63-bit comparator lessequal                           : 1
+ 64-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2858
+ 1-bit 2-to-1 multiplexer                              : 2852
+ 31-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <storeN_30> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_29> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_28> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_27> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_26> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_25> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_24> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_23> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_22> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_21> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_20> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_19> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_18> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_17> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_16> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_15> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_14> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_13> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_12> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_11> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_10> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_9> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <storeN_8> has a constant value of 0 in block <action>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_n00723> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <Mmult_n00773> of sequential type is unconnected in block <action>.
+WARNING:Xst:2677 - Node <Mmult_n00753> of sequential type is unconnected in block <action>.
+
+Optimizing unit <main> ...
+
+Optimizing unit <debounce_switch> ...
+
+Optimizing unit <action> ...
+WARNING:Xst:2677 - Node <debounce_switch_inst/state_10> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/state_11> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/state_12> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_51> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_50> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_49> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_48> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_47> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_46> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_45> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_44> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_43> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_42> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_41> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <debounce_switch_inst/debounce_reg_0_40> of sequential type is unconnected in block <main>.
+WARNING:Xst:1293 - FF/Latch <starting/N_10> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_9> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_8> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_30> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_29> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_28> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_27> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_26> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_25> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_24> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_23> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_22> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_21> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_20> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_19> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_18> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_17> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_16> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_15> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_14> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_13> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_12> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_11> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_10> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_9> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_8> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/temp_7> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_23> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_22> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_21> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_20> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_19> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_18> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <debounce_switch_inst/cnt_reg_17> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_30> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_29> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_28> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_27> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_26> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_25> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_24> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_23> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_22> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_21> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_20> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_19> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_18> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_17> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_16> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_15> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_14> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_13> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_12> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <starting/N_11> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <starting/STD_7> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 19.
+FlipFlop starting/storeN_0 has been replicated 5 time(s)
+FlipFlop starting/storeN_1 has been replicated 3 time(s)
+FlipFlop starting/storeN_2 has been replicated 5 time(s)
+FlipFlop starting/storeN_3 has been replicated 4 time(s)
+FlipFlop starting/storeN_4 has been replicated 4 time(s)
+FlipFlop starting/storeN_5 has been replicated 4 time(s)
+FlipFlop starting/storeN_6 has been replicated 4 time(s)
+FlipFlop starting/storeN_7 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <main> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <sync_reset_inst/sync_reg_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <main> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 204
+ Flip-Flops                                            : 204
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8314
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 76
+#      LUT2                        : 131
+#      LUT3                        : 644
+#      LUT4                        : 1461
+#      LUT5                        : 1384
+#      LUT6                        : 851
+#      MUXCY                       : 2169
+#      MUXF7                       : 9
+#      VCC                         : 1
+#      XORCY                       : 1570
+# FlipFlops/Latches                : 204
+#      FD                          : 8
+#      FDC                         : 17
+#      FDCE                        : 50
+#      FDE                         : 56
+#      FDP                         : 4
+#      FDR                         : 69
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 20
+#      IBUF                        : 11
+#      IBUFG                       : 1
+#      OBUF                        : 8
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# DSPs                             : 13
+#      DSP48A1                     : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             196  out of  54576     0%  
+ Number of Slice LUTs:                 4564  out of  27288    16%  
+    Number used as Logic:              4564  out of  27288    16%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4646
+   Number with an unused Flip Flop:    4450  out of   4646    95%  
+   Number with an unused LUT:            82  out of   4646     1%  
+   Number of fully used LUT-FF pairs:   114  out of   4646     2%  
+   Number of unique control sets:        20
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  20  out of    218     9%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                     13  out of     58    22%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | DCM_SP:CLKFX           | 85    |
+debounce_switch_inst/state_8       | BUFG                   | 114   |
+debounce_switch_inst/state_9       | NONE(starting/led_7)   | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 94.472ns (Maximum Frequency: 10.585MHz)
+   Minimum input arrival time before clock: 1.903ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 21.907ns (frequency: 45.647MHz)
+  Total number of paths / destination ports: 37740495 / 205
+-------------------------------------------------------------------------
+Delay:               17.526ns (Levels of Logic = 20)
+  Source:            starting/temp_0 (FF)
+  Destination:       starting/STD_6 (FF)
+  Source Clock:      clk rising 1.3X
+  Destination Clock: clk rising 1.3X
+
+  Data Path: starting/temp_0 to starting/STD_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.744  starting/temp_0 (starting/temp_0)
+     INV:I->O              1   0.206   0.000  starting/Madd_n0100_lut<0>_INV_0 (starting/Madd_n0100_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  starting/Madd_n0100_cy<0> (starting/Madd_n0100_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_n0100_cy<1> (starting/Madd_n0100_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_n0100_cy<2> (starting/Madd_n0100_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_n0100_cy<3> (starting/Madd_n0100_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_n0100_cy<4> (starting/Madd_n0100_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_n0100_cy<5> (starting/Madd_n0100_cy<5>)
+     XORCY:CI->O           4   0.180   0.683  starting/Madd_n0100_xor<6> (starting/n0100<6>)
+     DSP48A1:A6->P47      18   4.560   1.049  starting/Mmult_n0075 (starting/Mmult_n0075_P47_to_Mmult_n00751)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  starting/Mmult_n00751 (starting/Mmult_n00751_PCOUT_to_Mmult_n00752_PCIN_47)
+     DSP48A1:PCIN47->P1    2   2.264   0.864  starting/Mmult_n00752 (starting/n0075<18>)
+     LUT4:I0->O            1   0.203   0.000  starting/Mcompar__n0136_lut<9> (starting/Mcompar__n0136_lut<9>)
+     MUXCY:S->O            1   0.172   0.000  starting/Mcompar__n0136_cy<9> (starting/Mcompar__n0136_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Mcompar__n0136_cy<10> (starting/Mcompar__n0136_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Mcompar__n0136_cy<11> (starting/Mcompar__n0136_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Mcompar__n0136_cy<12> (starting/Mcompar__n0136_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Mcompar__n0136_cy<13> (starting/Mcompar__n0136_cy<13>)
+     MUXCY:CI->O           1   0.213   0.580  starting/Mcompar__n0136_cy<14> (starting/Mcompar__n0136_cy<14>)
+     LUT5:I4->O            1   0.205   0.827  starting/Mcompar__n0136_cy<15> (starting/_n0136)
+     LUT5:I1->O            7   0.203   0.773  starting/_n0141_inv1 (starting/_n0141_inv)
+     FDE:CE                    0.322          starting/STD_0
+    ----------------------------------------
+    Total                     17.526ns (12.007ns logic, 5.519ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'debounce_switch_inst/state_8'
+  Clock period: 94.472ns (frequency: 10.585MHz)
+  Total number of paths / destination ports: 13787456264274652000000000000000000000000000000 / 177
+-------------------------------------------------------------------------
+Delay:               94.472ns (Levels of Logic = 156)
+  Source:            starting/AVG_0 (FF)
+  Destination:       starting/AVG_0 (FF)
+  Source Clock:      debounce_switch_inst/state_8 rising
+  Destination Clock: debounce_switch_inst/state_8 rising
+
+  Data Path: starting/AVG_0 to starting/AVG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.651  starting/AVG_0 (starting/AVG_0)
+     LUT2:I1->O            1   0.205   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_lut<0> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<0> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<1> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<2> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<3> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<4> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<5> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<6> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<7> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<8> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<9> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<10> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<11> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<12> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<13> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<14> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<15> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<16> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<17> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<18> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<19> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<20> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<21> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<22> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<23> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<24> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<25> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<26> (starting/Madd_AVG[30]_GND_9_o_add_9_OUT_cy<26>)
+     XORCY:CI->O          22   0.180   1.238  starting/Madd_AVG[30]_GND_9_o_add_9_OUT_xor<27> (starting/AVG[30]_GND_9_o_add_9_OUT<27>)
+     LUT5:I3->O            1   0.203   0.808  starting/AVG[30]_storeN[30]_div_8/Madd_GND_11_o_b[30]_add_7_OUT_Madd_Madd_lut<29>1_SW4 (N488)
+     LUT6:I3->O            2   0.205   0.721  starting/AVG[30]_storeN[30]_div_8_OUT<27>2_SW2 (N115)
+     LUT5:I3->O            1   0.203   0.684  starting/AVG[30]_storeN[30]_div_8_OUT<27>2_SW4 (N649)
+     LUT6:I4->O            6   0.203   0.745  starting/AVG[30]_storeN[30]_div_8_OUT<27>11 (starting/AVG[30]_storeN[30]_div_8_OUT<27>)
+     LUT6:I5->O           20   0.205   1.197  starting/AVG[30]_storeN[30]_div_8/Madd_GND_11_o_b[30]_add_11_OUT_Madd_Madd_cy<28>11 (starting/AVG[30]_storeN[30]_div_8/Madd_GND_11_o_b[30]_add_11_OUT_Madd_Madd_cy<28>)
+     LUT6:I4->O           16   0.203   1.005  starting/AVG[30]_storeN[30]_div_8_OUT<26>11 (starting/AVG[30]_storeN[30]_div_8_OUT<26>)
+     LUT3:I2->O            2   0.205   0.864  starting/AVG[30]_storeN[30]_div_8_OUT<25>1 (starting/AVG[30]_storeN[30]_div_8_OUT<25>1)
+     LUT6:I2->O           21   0.203   1.114  starting/AVG[30]_storeN[30]_div_8_OUT<25>24 (starting/AVG[30]_storeN[30]_div_8_OUT<25>)
+     LUT6:I5->O            6   0.205   0.745  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_952_o1211 (starting/AVG[30]_storeN[30]_div_8/a[29]_GND_11_o_MUX_923_o)
+     LUT6:I5->O            1   0.205   0.000  starting/AVG[30]_storeN[30]_div_8_OUT<24>1_G (N657)
+     MUXF7:I1->O          23   0.140   1.154  starting/AVG[30]_storeN[30]_div_8_OUT<24>1 (starting/AVG[30]_storeN[30]_div_8_OUT<24>2)
+     LUT6:I5->O            9   0.205   0.830  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1062_o1161 (starting/AVG[30]_storeN[30]_div_8/a[24]_GND_11_o_MUX_1038_o)
+     LUT6:I5->O            1   0.205   0.579  starting/AVG[30]_storeN[30]_div_8_OUT<23>3 (starting/AVG[30]_storeN[30]_div_8_OUT<23>1)
+     MUXF7:S->O           18   0.148   1.050  starting/AVG[30]_storeN[30]_div_8_OUT<23>1 (starting/AVG[30]_storeN[30]_div_8_OUT<23>2)
+     LUT5:I4->O           11   0.205   0.883  starting/AVG[30]_storeN[30]_div_8_OUT<23>21 (starting/AVG[30]_storeN[30]_div_8_OUT<23>)
+     LUT6:I5->O            2   0.205   0.864  starting/AVG[30]_storeN[30]_div_8_OUT<22>1_SW0 (N8)
+     LUT6:I2->O            8   0.203   0.803  starting/AVG[30]_storeN[30]_div_8_OUT<22>21_1 (starting/AVG[30]_storeN[30]_div_8_OUT<22>21)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1276_o1201 (starting/AVG[30]_storeN[30]_div_8/a[28]_GND_11_o_MUX_1248_o)
+     LUT5:I0->O            0   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<21>_lutdi3 (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<21>_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<21>_cy<3> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<21>_cy<3>)
+     MUXCY:CI->O          32   0.213   1.292  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<21>_cy<4> (starting/AVG[30]_storeN[30]_div_8_OUT<21>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1380_o1191 (starting/AVG[30]_storeN[30]_div_8/a[27]_GND_11_o_MUX_1353_o)
+     LUT5:I0->O            0   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<20>_lutdi3 (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<20>_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<20>_cy<3> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<20>_cy<3>)
+     MUXCY:CI->O          45   0.213   1.477  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<20>_cy<4> (starting/AVG[30]_storeN[30]_div_8_OUT<20>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1482_o1181 (starting/AVG[30]_storeN[30]_div_8/a[26]_GND_11_o_MUX_1456_o)
+     LUT5:I0->O            0   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<19>_lutdi3 (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<19>_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<19>_cy<3> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<19>_cy<3>)
+     MUXCY:CI->O          38   0.213   1.377  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<19>_cy<4> (starting/AVG[30]_storeN[30]_div_8_OUT<19>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1582_o1171 (starting/AVG[30]_storeN[30]_div_8/a[25]_GND_11_o_MUX_1557_o)
+     LUT5:I0->O            0   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<18>_lutdi3 (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<18>_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<18>_cy<3> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<18>_cy<3>)
+     MUXCY:CI->O          54   0.213   1.574  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<18>_cy<4> (starting/AVG[30]_storeN[30]_div_8_OUT<18>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1680_o1181 (starting/AVG[30]_storeN[30]_div_8/a[26]_GND_11_o_MUX_1654_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<17>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<17>_lut<4>)
+     MUXCY:S->O           45   0.366   1.477  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<17>_cy<4> (starting/AVG[30]_storeN[30]_div_8_OUT<17>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1776_o1171 (starting/AVG[30]_storeN[30]_div_8/a[25]_GND_11_o_MUX_1751_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<16>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<16>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<16>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<16>_cy<4>)
+     MUXCY:CI->O          61   0.213   1.621  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<16>_cy<5> (starting/AVG[30]_storeN[30]_div_8_OUT<16>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1870_o1161 (starting/AVG[30]_storeN[30]_div_8/a[24]_GND_11_o_MUX_1846_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<15>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<15>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<15>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<15>_cy<4>)
+     MUXCY:CI->O          50   0.213   1.548  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<15>_cy<5> (starting/AVG[30]_storeN[30]_div_8_OUT<15>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_1962_o1151 (starting/AVG[30]_storeN[30]_div_8/a[23]_GND_11_o_MUX_1939_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<14>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<14>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<14>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<14>_cy<4>)
+     MUXCY:CI->O          69   0.213   1.673  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<14>_cy<5> (starting/AVG[30]_storeN[30]_div_8_OUT<14>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2052_o1141 (starting/AVG[30]_storeN[30]_div_8/a[22]_GND_11_o_MUX_2030_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<13>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<13>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<13>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<13>_cy<4>)
+     MUXCY:CI->O          57   0.213   1.594  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<13>_cy<5> (starting/AVG[30]_storeN[30]_div_8_OUT<13>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2140_o1131 (starting/AVG[30]_storeN[30]_div_8/a[21]_GND_11_o_MUX_2119_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<12>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<12>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<12>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<12>_cy<4>)
+     MUXCY:CI->O          78   0.213   1.733  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<12>_cy<5> (starting/AVG[30]_storeN[30]_div_8_OUT<12>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2226_o1121 (starting/AVG[30]_storeN[30]_div_8/a[20]_GND_11_o_MUX_2206_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_cy<5>)
+     MUXCY:CI->O          62   0.213   1.627  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<11>_cy<6> (starting/AVG[30]_storeN[30]_div_8_OUT<11>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2310_o1101 (starting/AVG[30]_storeN[30]_div_8/a[19]_GND_11_o_MUX_2291_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_cy<5>)
+     MUXCY:CI->O          85   0.213   1.779  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<10>_cy<6> (starting/AVG[30]_storeN[30]_div_8_OUT<10>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2392_o191 (starting/AVG[30]_storeN[30]_div_8/a[18]_GND_11_o_MUX_2374_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_cy<5>)
+     MUXCY:CI->O          68   0.213   1.667  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<9>_cy<6> (starting/AVG[30]_storeN[30]_div_8_OUT<9>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2472_o181 (starting/AVG[30]_storeN[30]_div_8/a[17]_GND_11_o_MUX_2455_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_cy<5>)
+     MUXCY:CI->O          94   0.213   1.838  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<8>_cy<6> (starting/AVG[30]_storeN[30]_div_8_OUT<8>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2550_o171 (starting/AVG[30]_storeN[30]_div_8/a[16]_GND_11_o_MUX_2534_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_cy<5>)
+     MUXCY:CI->O          75   0.213   1.713  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<7>_cy<6> (starting/AVG[30]_storeN[30]_div_8_OUT<7>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2626_o161 (starting/AVG[30]_storeN[30]_div_8/a[15]_GND_11_o_MUX_2611_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<6>)
+     MUXCY:CI->O         101   0.019   1.880  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<6>_cy<7> (starting/AVG[30]_storeN[30]_div_8_OUT<6>)
+     LUT3:I2->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2700_o151 (starting/AVG[30]_storeN[30]_div_8/a[14]_GND_11_o_MUX_2686_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<6>)
+     MUXCY:CI->O          80   0.019   1.746  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<5>_cy<7> (starting/AVG[30]_storeN[30]_div_8_OUT<5>)
+     LUT5:I4->O            5   0.205   1.059  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2772_o141 (starting/AVG[30]_storeN[30]_div_8/a[13]_GND_11_o_MUX_2759_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<6>)
+     MUXCY:CI->O         109   0.019   1.901  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<4>_cy<7> (starting/AVG[30]_storeN[30]_div_8_OUT<4>)
+     LUT3:I2->O            4   0.205   1.028  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2842_o131 (starting/AVG[30]_storeN[30]_div_8/a[12]_GND_11_o_MUX_2830_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<6>)
+     MUXCY:CI->O         114   0.019   1.914  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<3>_cy<7> (starting/AVG[30]_storeN[30]_div_8_OUT<3>)
+     LUT5:I4->O            3   0.205   0.995  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2910_o122 (starting/AVG[30]_storeN[30]_div_8/a[11]_GND_11_o_MUX_2899_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<6>)
+     MUXCY:CI->O          89   0.019   1.805  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<2>_cy<7> (starting/AVG[30]_storeN[30]_div_8_OUT<2>)
+     LUT5:I4->O            2   0.205   0.961  starting/AVG[30]_storeN[30]_div_8/Mmux_a[0]_GND_11_o_MUX_2976_o111 (starting/AVG[30]_storeN[30]_div_8/a[10]_GND_11_o_MUX_2966_o)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<7> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<7>)
+     MUXCY:CI->O          31   0.019   1.278  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<1>_cy<8> (starting/AVG[30]_storeN[30]_div_8_OUT<1>)
+     LUT5:I4->O            2   0.205   0.961  starting/AVG[30]_storeN[30]_div_8/Mmux_n3230311 (starting/AVG[30]_storeN[30]_div_8/n3230<9>)
+     LUT5:I0->O            1   0.203   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_lut<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<4> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<5> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<6> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<7> (starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  starting/AVG[30]_storeN[30]_div_8/Mcompar_o<0>_cy<8> (starting/AVG[30]_storeN[30]_div_8_OUT<0>)
+     MUXCY:CI->O           1   0.019   0.000  starting/Eqn_01_cy (starting/AVG[30]_storeN[30]_div_8_OUT<0>_l1)
+     MUXCY:CI->O           1   0.258   0.000  starting/Eqn_01_cy1 (starting/Eqn_0)
+     FDR:D                     0.102          starting/AVG_0
+    ----------------------------------------
+    Total                     94.472ns (21.588ns logic, 72.884ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            btnr (PAD)
+  Destination:       debounce_switch_inst/debounce_reg_0_36 (FF)
+  Destination Clock: clk rising 1.3X
+
+  Data Path: btnr to debounce_switch_inst/debounce_reg_0_36
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  btnr_IBUF (btnr_IBUF)
+     FDCE:D                    0.102          debounce_switch_inst/debounce_reg_0_36
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'debounce_switch_inst/state_9'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            starting/led_7 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      debounce_switch_inst/state_9 rising
+
+  Data Path: starting/led_7 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  starting/led_7 (starting/led_7)
+     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |   17.526|         |         |         |
+debounce_switch_inst/state_8|  129.852|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock debounce_switch_inst/state_8
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |   95.077|         |         |         |
+debounce_switch_inst/state_8|   94.472|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock debounce_switch_inst/state_9
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |    2.270|         |         |         |
+debounce_switch_inst/state_8|    2.124|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.70 secs
+ 
+--> 
+
+Total memory usage is 424264 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  170 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

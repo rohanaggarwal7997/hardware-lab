@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.49d on Fri Jan 27 13:24:10 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "A10" LEVEL 1;
+COMP "count<0>" LOCATE = SITE "M14" LEVEL 1;
+COMP "count<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "count<2>" LOCATE = SITE "L14" LEVEL 1;
+COMP "count<3>" LOCATE = SITE "M13" LEVEL 1;
+SCHEMATIC END;
+

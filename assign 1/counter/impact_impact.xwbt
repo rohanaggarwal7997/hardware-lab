@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\DDP\Xilinx\counter\impact.xsl
+OUTFILE=E:\DDP\Xilinx\counter\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\DDP\Xilinx\counter
+LICENSE=iMPACT
+USER_INFO=iMPACT

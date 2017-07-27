@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 202: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow3_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 203: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow4_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 204: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow5_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 205: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow6_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 206: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow7_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 207: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow8_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 208: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow9_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 209: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow10_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 210: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow11_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 211: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow12_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 212: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow13_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 213: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow14_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 214: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow15_count</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd" Line 215: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">arow16_count</arg> since it is never assigned
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">473</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">496</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">519</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">542</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">565</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">588</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r9</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">611</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r10</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">634</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r11</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">657</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r12</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">680</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r13</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">703</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r14</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">726</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r15</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">749</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">r16</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Desktop\Assign4\Attempt2 - Shivram\top.vhd</arg>&quot; line <arg fmt="%s" index="2">773</arg>: Output port &lt;<arg fmt="%s" index="3">debug_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">rB</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum1</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum2</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum3</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum4</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum5</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum6</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum7</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum8</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">KEEP</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">shared_sum9</arg> may hinder XST clustering optimizations.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">multiply_count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">multiply_count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">multiply_count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">multiply_count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">multiply_count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">col_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">col_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">module_enable_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">store_data_count_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">store_data_count_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">store_data_count_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">col_send_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">col_send_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">module_enable_send_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">processing_stop</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;store_data_count_4&gt; </arg>
+</msg>
+
+</messages>
+

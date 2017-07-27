@@ -1,0 +1,5 @@
+vhdl work "ram_mod.vhd"
+vhdl work "ram_store.vhd"
+vhdl work "ram.vhd"
+vhdl work "comm_fpga_fx2.vhd"
+vhdl work "top.vhd"

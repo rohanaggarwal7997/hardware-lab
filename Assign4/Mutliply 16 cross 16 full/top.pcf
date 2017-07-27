@@ -1,0 +1,177 @@
+//! **************************************************************************
+// Written by: Map P.49d on Tue Apr 18 20:44:08 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "fx2Clk_in" LOCATE = SITE "C10" LEVEL 1;
+COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "fx2Data_io<0>" LOCATE = SITE "A2" LEVEL 1;
+COMP "fx2Data_io<1>" LOCATE = SITE "D6" LEVEL 1;
+COMP "fx2Data_io<2>" LOCATE = SITE "C6" LEVEL 1;
+COMP "fx2Data_io<3>" LOCATE = SITE "B3" LEVEL 1;
+COMP "fx2Data_io<4>" LOCATE = SITE "A3" LEVEL 1;
+COMP "fx2Data_io<5>" LOCATE = SITE "B4" LEVEL 1;
+COMP "fx2Data_io<6>" LOCATE = SITE "A4" LEVEL 1;
+COMP "fx2Data_io<7>" LOCATE = SITE "C5" LEVEL 1;
+COMP "fx2Read_out" LOCATE = SITE "F13" LEVEL 1;
+COMP "fx2GotData_in" LOCATE = SITE "C15" LEVEL 1;
+COMP "slide_sw_in<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "slide_sw_in<1>" LOCATE = SITE "D14" LEVEL 1;
+COMP "slide_sw_in<2>" LOCATE = SITE "C14" LEVEL 1;
+COMP "slide_sw_in<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "slide_sw_in<4>" LOCATE = SITE "P12" LEVEL 1;
+COMP "slide_sw_in<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "slide_sw_in<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "slide_sw_in<7>" LOCATE = SITE "E4" LEVEL 1;
+COMP "fx2GotRoom_in" LOCATE = SITE "A9" LEVEL 1;
+COMP "led_out<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "led_out<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "led_out<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "led_out<3>" LOCATE = SITE "L14" LEVEL 1;
+COMP "led_out<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "fx2Write_out" LOCATE = SITE "E13" LEVEL 1;
+COMP "fx2PktEnd_out" LOCATE = SITE "C4" LEVEL 1;
+COMP "fx2Addr_out<0>" LOCATE = SITE "A14" LEVEL 1;
+COMP "fx2Addr_out<1>" LOCATE = SITE "B14" LEVEL 1;
+COMP "fx2OE_out" LOCATE = SITE "A15" LEVEL 1;
+PIN r16/Mmac_n0022_pins<92> = BEL "r16/Mmac_n0022" PINNAME CLK;
+PIN r15/Mmac_n0022_pins<92> = BEL "r15/Mmac_n0022" PINNAME CLK;
+PIN r14/Mmac_n0022_pins<92> = BEL "r14/Mmac_n0022" PINNAME CLK;
+PIN r13/Mmac_n0022_pins<92> = BEL "r13/Mmac_n0022" PINNAME CLK;
+PIN r12/Mmac_n0022_pins<92> = BEL "r12/Mmac_n0022" PINNAME CLK;
+PIN r11/Mmac_n0022_pins<92> = BEL "r11/Mmac_n0022" PINNAME CLK;
+PIN r10/Mmac_n0022_pins<92> = BEL "r10/Mmac_n0022" PINNAME CLK;
+PIN r9/Mmac_n0022_pins<92> = BEL "r9/Mmac_n0022" PINNAME CLK;
+PIN r8/Mmac_n0022_pins<92> = BEL "r8/Mmac_n0022" PINNAME CLK;
+PIN r7/Mmac_n0022_pins<92> = BEL "r7/Mmac_n0022" PINNAME CLK;
+PIN r6/Mmac_n0022_pins<92> = BEL "r6/Mmac_n0022" PINNAME CLK;
+PIN r5/Mmac_n0022_pins<92> = BEL "r5/Mmac_n0022" PINNAME CLK;
+PIN r4/Mmac_n0022_pins<92> = BEL "r4/Mmac_n0022" PINNAME CLK;
+PIN r3/Mmac_n0022_pins<92> = BEL "r3/Mmac_n0022" PINNAME CLK;
+PIN r2/Mmac_n0022_pins<92> = BEL "r2/Mmac_n0022" PINNAME CLK;
+PIN r1/Mmac_n0022_pins<92> = BEL "r1/Mmac_n0022" PINNAME CLK;
+TIMEGRP fx2Clk_in = BEL "col_send_0" BEL "col_send_1" BEL "col_send_2" BEL
+        "col_send_3" BEL "module_enable_send_0" BEL "module_enable_send_1" BEL
+        "module_enable_send_2" BEL "module_enable_send_3" BEL
+        "module_enable_send_4" BEL "reg0_0" BEL "reg0_1" BEL "reg0_2" BEL
+        "reg0_3" BEL "reg0_4" BEL "reg0_5" BEL "reg0_6" BEL "reg0_7" BEL
+        "sh1_0" BEL "sh1_1" BEL "sh1_2" BEL "sh1_3" BEL "sh1_4" BEL "sh1_5"
+        BEL "sh1_6" BEL "sh1_7" BEL "sh2_0" BEL "sh2_1" BEL "sh2_2" BEL
+        "sh2_3" BEL "sh2_4" BEL "sh2_5" BEL "sh2_6" BEL "sh2_7" BEL "sh3_0"
+        BEL "sh3_1" BEL "sh3_2" BEL "sh3_3" BEL "sh3_4" BEL "sh3_5" BEL
+        "sh3_6" BEL "sh3_7" BEL "sh4_0" BEL "sh4_1" BEL "sh4_2" BEL "sh4_3"
+        BEL "sh4_4" BEL "sh4_5" BEL "sh4_6" BEL "sh4_7" BEL "sh5_0" BEL
+        "sh5_1" BEL "sh5_2" BEL "sh5_3" BEL "sh5_4" BEL "sh5_5" BEL "sh5_6"
+        BEL "sh5_7" BEL "sh8_0" BEL "sh8_1" BEL "sh8_2" BEL "sh8_3" BEL
+        "sh8_4" BEL "sh8_5" BEL "sh8_6" BEL "sh8_7" BEL "sh6_0" BEL "sh6_1"
+        BEL "sh6_2" BEL "sh6_3" BEL "sh6_4" BEL "sh6_5" BEL "sh6_6" BEL
+        "sh6_7" BEL "sh7_0" BEL "sh7_1" BEL "sh7_2" BEL "sh7_3" BEL "sh7_4"
+        BEL "sh7_5" BEL "sh7_6" BEL "sh7_7" BEL "sh9_0" BEL "sh9_1" BEL
+        "sh9_2" BEL "sh9_3" BEL "sh9_4" BEL "sh9_5" BEL "sh9_6" BEL "sh9_7"
+        BEL "sh10_0" BEL "sh10_1" BEL "sh10_2" BEL "sh10_3" BEL "sh10_4" BEL
+        "sh10_5" BEL "sh10_6" BEL "sh10_7" BEL "sh11_0" BEL "sh11_1" BEL
+        "sh11_2" BEL "sh11_3" BEL "sh11_4" BEL "sh11_5" BEL "sh11_6" BEL
+        "sh11_7" BEL "sh12_0" BEL "sh12_1" BEL "sh12_2" BEL "sh12_3" BEL
+        "sh12_4" BEL "sh12_5" BEL "sh12_6" BEL "sh12_7" BEL "sh15_0" BEL
+        "sh15_1" BEL "sh15_2" BEL "sh15_3" BEL "sh15_4" BEL "sh15_5" BEL
+        "sh15_6" BEL "sh15_7" BEL "sh13_0" BEL "sh13_1" BEL "sh13_2" BEL
+        "sh13_3" BEL "sh13_4" BEL "sh13_5" BEL "sh13_6" BEL "sh13_7" BEL
+        "sh14_0" BEL "sh14_1" BEL "sh14_2" BEL "sh14_3" BEL "sh14_4" BEL
+        "sh14_5" BEL "sh14_6" BEL "sh14_7" BEL "sh16_0" BEL "sh16_1" BEL
+        "sh16_2" BEL "sh16_3" BEL "sh16_4" BEL "sh16_5" BEL "sh16_6" BEL
+        "sh16_7" PIN "r16/Mmac_n0022_pins<92>" PIN "r15/Mmac_n0022_pins<92>"
+        PIN "r14/Mmac_n0022_pins<92>" PIN "r13/Mmac_n0022_pins<92>" PIN
+        "r12/Mmac_n0022_pins<92>" PIN "r11/Mmac_n0022_pins<92>" PIN
+        "r10/Mmac_n0022_pins<92>" PIN "r9/Mmac_n0022_pins<92>" PIN
+        "r8/Mmac_n0022_pins<92>" PIN "r7/Mmac_n0022_pins<92>" PIN
+        "r6/Mmac_n0022_pins<92>" PIN "r5/Mmac_n0022_pins<92>" PIN
+        "r4/Mmac_n0022_pins<92>" PIN "r3/Mmac_n0022_pins<92>" PIN
+        "r2/Mmac_n0022_pins<92>" PIN "r1/Mmac_n0022_pins<92>" BEL
+        "fetch_count_0" BEL "fetch_count_1" BEL "fetch_count_2" BEL
+        "fetch_count_3" BEL "fetch_count_4" BEL "fetch_count_5" BEL
+        "fetch_count_6" BEL "fetch_count_7" BEL "fetch_count_8" BEL
+        "multiply_count_0" BEL "multiply_count_1" BEL "multiply_count_2" BEL
+        "multiply_count_3" BEL "s1_count_0" BEL "s1_count_1" BEL "s1_count_2"
+        BEL "s1_count_3" BEL "s1_count_4" BEL "s1_count_5" BEL "s1_count_6"
+        BEL "s1_count_7" BEL "Arow1_count_0" BEL "Arow1_count_1" BEL
+        "Arow1_count_2" BEL "Arow1_count_3" BEL "Arow1_count_4" BEL
+        "Arow1_count_5" BEL "Arow1_count_6" BEL "Arow1_count_7" BEL
+        "Arow2_count_0" BEL "Arow2_count_1" BEL "Arow2_count_2" BEL
+        "Arow2_count_3" BEL "Arow2_count_4" BEL "Arow2_count_5" BEL
+        "Arow2_count_6" BEL "Arow2_count_7" BEL "s2_count_0" BEL "s2_count_1"
+        BEL "s2_count_2" BEL "s2_count_3" BEL "s2_count_4" BEL "s2_count_5"
+        BEL "s2_count_6" BEL "s2_count_7" BEL "s3_count_0" BEL "s3_count_1"
+        BEL "s3_count_2" BEL "s3_count_3" BEL "s3_count_4" BEL "s3_count_5"
+        BEL "s3_count_6" BEL "s3_count_7" BEL "s4_count_0" BEL "s4_count_1"
+        BEL "s4_count_2" BEL "s4_count_3" BEL "s4_count_4" BEL "s4_count_5"
+        BEL "s4_count_6" BEL "s4_count_7" BEL "s6_count_0" BEL "s6_count_1"
+        BEL "s6_count_2" BEL "s6_count_3" BEL "s6_count_4" BEL "s6_count_5"
+        BEL "s6_count_6" BEL "s6_count_7" BEL "s5_count_0" BEL "s5_count_1"
+        BEL "s5_count_2" BEL "s5_count_3" BEL "s5_count_4" BEL "s5_count_5"
+        BEL "s5_count_6" BEL "s5_count_7" BEL "s7_count_0" BEL "s7_count_1"
+        BEL "s7_count_2" BEL "s7_count_3" BEL "s7_count_4" BEL "s7_count_5"
+        BEL "s7_count_6" BEL "s7_count_7" BEL "s10_count_0" BEL "s10_count_1"
+        BEL "s10_count_2" BEL "s10_count_3" BEL "s10_count_4" BEL
+        "s10_count_5" BEL "s10_count_6" BEL "s10_count_7" BEL "s8_count_0" BEL
+        "s8_count_1" BEL "s8_count_2" BEL "s8_count_3" BEL "s8_count_4" BEL
+        "s8_count_5" BEL "s8_count_6" BEL "s8_count_7" BEL "s9_count_0" BEL
+        "s9_count_1" BEL "s9_count_2" BEL "s9_count_3" BEL "s9_count_4" BEL
+        "s9_count_5" BEL "s9_count_6" BEL "s9_count_7" BEL "s11_count_0" BEL
+        "s11_count_1" BEL "s11_count_2" BEL "s11_count_3" BEL "s11_count_4"
+        BEL "s11_count_5" BEL "s11_count_6" BEL "s11_count_7" BEL
+        "s12_count_0" BEL "s12_count_1" BEL "s12_count_2" BEL "s12_count_3"
+        BEL "s12_count_4" BEL "s12_count_5" BEL "s12_count_6" BEL
+        "s12_count_7" BEL "s15_count_0" BEL "s15_count_1" BEL "s15_count_2"
+        BEL "s15_count_3" BEL "s15_count_4" BEL "s15_count_5" BEL
+        "s15_count_6" BEL "s15_count_7" BEL "s13_count_0" BEL "s13_count_1"
+        BEL "s13_count_2" BEL "s13_count_3" BEL "s13_count_4" BEL
+        "s13_count_5" BEL "s13_count_6" BEL "s13_count_7" BEL "s14_count_0"
+        BEL "s14_count_1" BEL "s14_count_2" BEL "s14_count_3" BEL
+        "s14_count_4" BEL "s14_count_5" BEL "s14_count_6" BEL "s14_count_7"
+        BEL "s16_count_0" BEL "s16_count_1" BEL "s16_count_2" BEL
+        "s16_count_3" BEL "s16_count_4" BEL "s16_count_5" BEL "s16_count_6"
+        BEL "s16_count_7" BEL "store_data_count_0" BEL "store_data_count_1"
+        BEL "store_data_count_2" BEL "store_data_count_3" BEL
+        "comm_fpga_fx2/state_FSM_FFd2" BEL "comm_fpga_fx2/state_FSM_FFd3" BEL
+        "comm_fpga_fx2/state_FSM_FFd1" BEL "comm_fpga_fx2/state_FSM_FFd4" BEL
+        "comm_fpga_fx2/count_31" BEL "comm_fpga_fx2/count_30" BEL
+        "comm_fpga_fx2/count_29" BEL "comm_fpga_fx2/count_28" BEL
+        "comm_fpga_fx2/count_27" BEL "comm_fpga_fx2/count_26" BEL
+        "comm_fpga_fx2/count_25" BEL "comm_fpga_fx2/count_24" BEL
+        "comm_fpga_fx2/count_23" BEL "comm_fpga_fx2/count_22" BEL
+        "comm_fpga_fx2/count_21" BEL "comm_fpga_fx2/count_20" BEL
+        "comm_fpga_fx2/count_19" BEL "comm_fpga_fx2/count_18" BEL
+        "comm_fpga_fx2/count_17" BEL "comm_fpga_fx2/count_16" BEL
+        "comm_fpga_fx2/count_15" BEL "comm_fpga_fx2/count_14" BEL
+        "comm_fpga_fx2/count_13" BEL "comm_fpga_fx2/count_12" BEL
+        "comm_fpga_fx2/count_11" BEL "comm_fpga_fx2/count_10" BEL
+        "comm_fpga_fx2/count_9" BEL "comm_fpga_fx2/count_8" BEL
+        "comm_fpga_fx2/count_7" BEL "comm_fpga_fx2/count_6" BEL
+        "comm_fpga_fx2/count_5" BEL "comm_fpga_fx2/count_4" BEL
+        "comm_fpga_fx2/count_3" BEL "comm_fpga_fx2/count_2" BEL
+        "comm_fpga_fx2/count_1" BEL "comm_fpga_fx2/count_0" BEL
+        "comm_fpga_fx2/isWrite" BEL "comm_fpga_fx2/chanAddr_6" BEL
+        "comm_fpga_fx2/chanAddr_5" BEL "comm_fpga_fx2/chanAddr_4" BEL
+        "comm_fpga_fx2/chanAddr_3" BEL "comm_fpga_fx2/chanAddr_2" BEL
+        "comm_fpga_fx2/chanAddr_1" BEL "comm_fpga_fx2/chanAddr_0" BEL "fetch"
+        BEL "processing_stop" BEL "processing_enable" BEL "module_enable_4"
+        BEL "num_b_0" BEL "num_b_1" BEL "num_b_2" BEL "num_b_3" BEL "num_b_4"
+        BEL "num_b_5" BEL "num_b_6" BEL "num_b_7" BEL "num_b_8" BEL
+        "module_enable_0" BEL "comm_fpga_fx2/isAligned" BEL "store_data" BEL
+        "comm_fpga_fx2/chanAddr_0_1" BEL "col_0" BEL "col_1" BEL "col_2" BEL
+        "col_3" BEL "comm_fpga_fx2/state_FSM_FFd2_1" BEL
+        "comm_fpga_fx2/state_FSM_FFd3_1" BEL "module_enable_1" BEL
+        "module_enable_2" BEL "module_enable_3" BEL
+        "comm_fpga_fx2/state_FSM_FFd1_1" BEL "comm_fpga_fx2/state_FSM_FFd4_1"
+        BEL "comm_fpga_fx2/state_FSM_FFd3_2" BEL
+        "comm_fpga_fx2/state_FSM_FFd2_2" BEL "comm_fpga_fx2/state_FSM_FFd4_2"
+        BEL "processing_enable_1" BEL "multiply" BEL "col_read_0" BEL
+        "col_read_1" BEL "col_read_2" BEL "col_read_3" BEL "col_read_4" BEL
+        "col_read_5" BEL "col_read_6" BEL "col_read_7" BEL "processing_stop_1"
+        BEL "processing_enable_2" BEL "processing_stop_2" BEL
+        "comm_fpga_fx2/state_FSM_FFd3_3" BEL "comm_fpga_fx2/state_FSM_FFd1_2"
+        BEL "comm_fpga_fx2/state_FSM_FFd2_3" BEL
+        "comm_fpga_fx2/state_FSM_FFd2_4" BEL "fx2Clk_in_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "fx2Clk_in" 20 ns HIGH 50%;
+SCHEMATIC END;
+

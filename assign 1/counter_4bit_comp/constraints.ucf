@@ -1,0 +1,9 @@
+#NET "clk" LOC = "L15" | IOSTANDARD=LVCMOS33; # IO_L42P_GCLK7_M1UDM (GCLK)
+#NET "clk" TNM_NET = "sys_clk_pin";
+#TIMESPEC "TS_sys_clk_pin" = PERIOD "sys_clk_pin" 100000 kHz;
+#NET "clk" LOC = "L15";
+NET "q3" LOC = "L14";
+NET "q2" LOC = "N14";
+NET "q1" LOC = "M14";
+NET "q0" LOC = "U18";
+NET "en" LOC = "A10";

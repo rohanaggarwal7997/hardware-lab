@@ -1,0 +1,5 @@
+NET "clk" LOC = "A10";
+NET "count<3>" LOC = "M13";
+NET "count<2>" LOC = "L14";
+NET "count<1>" LOC = "N14";
+NET "count<0>" LOC = "M14";

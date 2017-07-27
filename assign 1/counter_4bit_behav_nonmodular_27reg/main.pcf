@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.49d on Fri Jan 27 13:23:21 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "clear" LOCATE = SITE "A10" LEVEL 1;
+COMP "count<0>" LOCATE = SITE "U18" LEVEL 1;
+COMP "count<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "count<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "count<3>" LOCATE = SITE "L14" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "count_0" BEL "count_1" BEL "count_2" BEL "count_3"
+        BEL "clk_bufg_inst" BEL "delay_0" BEL "delay_1" BEL "delay_2" BEL
+        "delay_3" BEL "delay_4" BEL "delay_5" BEL "delay_6" BEL "delay_7" BEL
+        "delay_8" BEL "delay_9" BEL "delay_10" BEL "delay_11" BEL "delay_12"
+        BEL "delay_13" BEL "delay_14" BEL "delay_15" BEL "delay_16" BEL
+        "delay_17" BEL "delay_18" BEL "delay_19" BEL "delay_20" BEL "delay_21"
+        BEL "delay_22" BEL "delay_23" BEL "delay_24" BEL "delay_25" BEL
+        "delay_26";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Shivram\Desktop\hardware\Calculator\impact.xsl
+OUTFILE=C:\Users\Shivram\Desktop\hardware\Calculator\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Shivram\Desktop\hardware\Calculator
+LICENSE=iMPACT
+USER_INFO=iMPACT

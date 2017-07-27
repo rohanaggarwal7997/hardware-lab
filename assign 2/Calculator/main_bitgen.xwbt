@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Shivram\Desktop\hardware\Calculator\main.ncd
+OUTFILE=C:\Users\Shivram\Desktop\hardware\Calculator\main.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\Shivram\Desktop\hardware\Calculator
+LICENSE=ISE
+USER_INFO=178200940_1777492345_210560825_321

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/DDP/Xilinx/ISE/counter_4bit_comp/d_flip_flop_edge_triggered.xst" -ofn "E:/DDP/Xilinx/ISE/counter_4bit_comp/d_flip_flop_edge_triggered.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 d_flip_flop_edge_triggered.ngc d_flip_flop_edge_triggered.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o d_flip_flop_edge_triggered_map.ncd d_flip_flop_edge_triggered.ngd d_flip_flop_edge_triggered.pcf 
+par -w -intstyle ise -ol high -mt off d_flip_flop_edge_triggered_map.ncd d_flip_flop_edge_triggered.ncd d_flip_flop_edge_triggered.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml d_flip_flop_edge_triggered.twx d_flip_flop_edge_triggered.ncd -o d_flip_flop_edge_triggered.twr d_flip_flop_edge_triggered.pcf 

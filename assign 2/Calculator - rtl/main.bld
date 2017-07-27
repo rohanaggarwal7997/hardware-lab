@@ -1,0 +1,47 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc ports.ucf -p xc6slx45-csg324-3 main.ngc
+main.ngd
+
+Reading NGO file "C:/Users/Shivram/Desktop/hardware/Calculator - rtl/main.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "ports.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_SP instance clk_dcm_inst. The following
+   new TNM groups and period specifications were generated at the DCM_SP
+   output(s): 
+   CLKFX: <TIMESPEC TS_clk_dcm_out = PERIOD "clk_dcm_out" TS_sys_clk_pin * 1.25
+   HIGH 50%>
+
+Done...
+
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   clk_dcm_inst to 10.000000 ns based on the period specification (<TIMESPEC
+   "TS_sys_clk_pin" = PERIOD "sys_clk_pin" 100000 kHz;> [ports.ucf(5)]).
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 222308 kilobytes
+
+Writing NGD file "main.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "main.bld"...

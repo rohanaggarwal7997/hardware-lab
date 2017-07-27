@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Rohan\Desktop\Xilinx projects\sat2\top_level.ncd
+OUTFILE=C:\Users\Rohan\Desktop\Xilinx projects\sat2\top_level.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\Rohan\Desktop\Xilinx projects\sat2
+LICENSE=WebPack
+USER_INFO=211331549_0_0_453
